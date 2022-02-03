@@ -100,6 +100,7 @@ public struct BannerWallView: View {
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 34, weight: .bold))
                     .padding([.leading, .trailing], 12)
+                    .padding(.bottom, 2)
 
                 Text(state.definition)
                     .foregroundColor(state.textColor.color)
@@ -107,6 +108,7 @@ public struct BannerWallView: View {
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 17, weight: .medium))
                     .padding([.leading, .trailing], 12)
+                    .padding(.bottom, 12)
 
                 if let data = state.imageData, let image = UIImage(data: data) {
                     Rectangle()
